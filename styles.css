@@ -1,0 +1,243 @@
+/* عام */
+body {
+  margin: 0;
+  font-family: "Tahoma", sans-serif;
+  line-height: 1.6;
+}
+
+/* الهيدر */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header .logo span {
+  color: #007BFF;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #555;
+  border-radius: 4px;
+}
+
+/* زر القائمة للموبايل */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background: #444;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    display: none;
+  }
+  nav ul.show {
+    display: block;
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+}
+
+/* Hero */
+.hero {
+  background: #f8f9fa;
+  padding: 60px 20px;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.hero-text h1 span {
+  color: #007BFF;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 18px;
+  background: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+/* About */
+.about {
+  background: #fff;
+  padding: 80px 20px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+
+/* Services */
+.services {
+  background: #f8f9fa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #007BFF;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-box {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.service-box .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+/* Social Media Links */
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #fff;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.social-links svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* ألوان رسمية لكل منصة */
+.social-links .facebook { background: #1877f2; }
+.social-links .twitter  { background: #1da1f2; }
+.social-links .linkedin { background: #0077b5; }
+.social-links .instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
+}
